@@ -9,9 +9,11 @@ function common_counter(a, b) {
       if (s1[i] === s2[j] && !common[j]) {
         count += 1;
         common[j] = true;
+        break;
       }
     }
   }
   return count;
 }
-document.getElementById("task2").innerHTML = alert(common_counter(s1, s2));
+var num = common_counter(s1, s2);
+document.getElementById("task2").innerHTML = num;

@@ -38,4 +38,5 @@ function check_inactive() {
     inactiveThirdStage();
   }
 }
-document.getElementById("task1").innerHTML = setInterval(check_inactive, 1000);
+setInterval(check_inactive, 1000);
+document.getElementById("task1").innerHTML = "Task 1 output is in console";
